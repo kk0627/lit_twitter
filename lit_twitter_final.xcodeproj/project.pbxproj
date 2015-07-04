@@ -31,6 +31,7 @@
 		23E5C8C21B3E3E82006EFC37 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5C8C01B3E3E82006EFC37 /* star.png */; };
 		23E5C8C41B3E3E8C006EFC37 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5C8C31B3E3E8C006EFC37 /* gear.png */; };
 		23E5C8C81B3E402F006EFC37 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23E5C8C71B3E402F006EFC37 /* icon.png */; };
+		23E8B7271B47961500FBD0C7 /* syuzo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 23E8B7261B47961500FBD0C7 /* syuzo.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		23E5C8C01B3E3E82006EFC37 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../../../Desktop/star.png; sourceTree = "<group>"; };
 		23E5C8C31B3E3E8C006EFC37 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gear.png; path = ../../../Desktop/gear.png; sourceTree = "<group>"; };
 		23E5C8C71B3E402F006EFC37 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../../Desktop/icon.png; sourceTree = "<group>"; };
+		23E8B7261B47961500FBD0C7 /* syuzo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = syuzo.jpeg; path = ../../../Desktop/syuzo.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		23E5C8871B3E3C1A006EFC37 /* lit_twitter_final */ = {
 			isa = PBXGroup;
 			children = (
+				23E8B7261B47961500FBD0C7 /* syuzo.jpeg */,
 				237096051B40D35600C258F3 /* postTweet.png */,
 				237096031B40D34900C258F3 /* batsu.png */,
 				237095FF1B3E79FB00C258F3 /* post.png */,
@@ -273,6 +276,7 @@
 				23E5C8C41B3E3E8C006EFC37 /* gear.png in Resources */,
 				23E5C8C11B3E3E82006EFC37 /* note.jpg in Resources */,
 				23E5C8901B3E3C1A006EFC37 /* Main.storyboard in Resources */,
+				23E8B7271B47961500FBD0C7 /* syuzo.jpeg in Resources */,
 				237096061B40D35600C258F3 /* postTweet.png in Resources */,
 				23E5C8C81B3E402F006EFC37 /* icon.png in Resources */,
 				23E5C8951B3E3C1A006EFC37 /* LaunchScreen.xib in Resources */,

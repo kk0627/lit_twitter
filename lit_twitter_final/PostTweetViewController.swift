@@ -15,6 +15,7 @@ class PostTweetViewController: UIViewController,UITextFieldDelegate{
     var myTextField:UITextField!
     var navigationLeftButton:UIButton!
     var navigationRightButton:UIButton!
+    var myImageView:UIImageView!
     
     
     override func viewDidLoad() {
@@ -48,6 +49,12 @@ class PostTweetViewController: UIViewController,UITextFieldDelegate{
         myTextField.layer.position = CGPointMake(self.view.frame.width/2, 200)
         myTextField.delegate = self
         self.view.addSubview(myTextField)
+        
+        myImageView = UIImageView(frame: CGRectMake(0,0,300,200))
+        myImageView.image = UIImage(named: "syuzo.jpeg")
+        myImageView.layer.position = CGPointMake(self.view.frame.width/2, 450)
+        
+        
     }
     
     //完了を押したらキーボードを閉じる
@@ -78,9 +85,14 @@ class PostTweetViewController: UIViewController,UITextFieldDelegate{
     }
 
     func onClickRightButton(sender:UIButton){
-        postTweet(myTextField.text,replyid: nil)
-        
-       dismissViewControllerAnimated(true, completion: nil)
+        if myTextField.text.rangeOfString("http") != nil {
+            postTweet(myTextField.text,replyid: nil)
+            dismissViewControllerAnimated(true, completion: nil)
+        } else{
+            println(myTextField.text)
+            self.view.addSubview(myImageView)
+            self.view.backgroundColor = UIColor.redColor()
+        }
     }
     
     

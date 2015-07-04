@@ -60,6 +60,7 @@ class TwitterAPI {
         
         self.getData("/statuses/home_timeline.json", params: param, process: {
             json in
+            println(json)
             if let jsonArray = json as? NSArray {
                 tweets(TWTRTweet.tweetsWithJSONArray(jsonArray as [AnyObject]) as! [TWTRTweet])
             }

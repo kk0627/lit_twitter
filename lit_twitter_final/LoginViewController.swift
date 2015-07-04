@@ -26,6 +26,8 @@ class LoginViewController: UIViewController {
             }
         })
         loginButton.center = self.view.center
+        self.view.backgroundColor = UIColor.whiteColor()
+        
         self.view.addSubview(loginButton)
     }
 }

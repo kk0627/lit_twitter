@@ -25,15 +25,30 @@ class TimelineViewController: BaseTweetViewController {
             twttrs in
             for tweet in twttrs {
                 let tmptweet : TWTRTweet = tweet
-                if (tmptweet.text.rangeOfString("http://") != nil){
+                if (tmptweet.text.rangeOfString("http://") != nil) && (//(tmptweet.description.rangeOfString("@hatebu") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@logmijp") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@hr_nabi") != nil) ||
+                                                                        //(tmptweet.description.rangeOfString("@blxxll") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@kotosaka") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@forbesjapan") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@tabbata") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@hidenorigoto") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@iteman") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@dentsuho") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@shin1x1") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@NewsPicksZebra") != nil) ||
+                                                                        (tmptweet.description.rangeOfString("@norihiko_sasaki") != nil)
+
+                    ){
+                //if tmptweet.text.rangeOfString("http://") != nil{
                 self.tweets.append(tmptweet)
                 let tweetid = tmptweet.tweetID
-//                println("------kugirisen--------")
-//                println(tweetid)
+                println("------kugirisen--------")
+                println(tmptweet)
                 }
             }
             self.tableView.reloadData()
-            }, maxid: nil, count: "100", error: {
+            }, maxid: nil, count: "500", error: {
             error in
             // error handling
         })
